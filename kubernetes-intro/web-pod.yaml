@@ -12,6 +12,7 @@ spec: # Описание Pod
     volumeMounts:
       - name: web
         mountPath: /app  
+  initContainers:
   - name: init
     image: busybox:latest
     imagePullPolicy: Always
